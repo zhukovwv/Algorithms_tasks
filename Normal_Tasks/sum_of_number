@@ -1,0 +1,17 @@
+"""
+Сумма цифр числа
+# Дано целое число (int), нужно посчитать сумму цифр.
+# Input: 123 Output: 6
+# Input: 23 Output: 5
+"""
+
+n = int(input())
+
+suma = 0
+
+while n > 0:
+    digit = n % 10
+    suma = suma + digit
+    n = n // 10
+
+print(suma)

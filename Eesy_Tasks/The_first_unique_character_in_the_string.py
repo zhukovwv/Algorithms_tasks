@@ -4,9 +4,10 @@
 
 Sample Input:
 
-leetcode
+    leetcode
 Sample Output:
 
-0
+    0
 """
-
+s = input()
+print(list(map(s.count, s)).index(1) if s and 1 in list(map(s.count, s)) else -1)
